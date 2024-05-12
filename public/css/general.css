@@ -1,0 +1,15 @@
+:root {
+  --main-color: #FAF1E1;
+  --login-body: #1A1C1E; 
+  --main-black: #0B0A08;
+  --input-black: #373740;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--main-color);
+  
+}
