@@ -1,0 +1,96 @@
+#black-circle {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 75%; 
+  background-color: var(--main-black);
+  border-bottom-left-radius: 500px;
+  border-bottom-right-radius: 500px;
+}
+
+main {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  width: 70%;
+}
+
+h1 {
+  margin: 50px 0px 70px;
+  text-align: center;
+  font-weight: 900;
+  font-size: 4.375rem;
+}
+
+form {
+  width: 100%;
+}
+
+#login-body {
+  margin: 0 auto;
+  padding-block: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 65%;
+  border-radius: 20px;
+  background-color: var(--login-body);
+  gap: 30px;
+}
+
+.input-field {
+  display: flex;
+  width: 100%;
+  max-width: 400px;
+  flex-direction: column;
+  gap: 10px;
+  background-color: var(--input-black);
+  padding: 1em 2em;
+  border-radius: 20px;
+}
+
+.input-field > label {
+  font-weight: 300;
+}
+
+.input {
+  font-size: 20px;
+  font-weight: 500;
+  background-color: transparent;
+  border: none;
+  caret-color: var(--main-color);
+  color: var(--main-color);
+  border-bottom: 1px solid var(--main-color);
+}
+
+input:focus {
+    outline: none;
+}
+
+#login-button {
+  font-family: 'Oxanium';
+  width: 100%;
+  max-width: 400px;
+  padding-block: 10px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  font-weight: 900;
+  border: none;
+  background-color: var(--main-color);
+  color: var(--main-black);
+  cursor: pointer;
+}
+
+#link {
+  text-decoration: none;
+  color: inherit;
+}
+
+#link:hover {
+  color: blue;
+}
