@@ -9,7 +9,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
-  <title>Document</title>
+
+  <link rel="icon" type="image/x-icon" href="/images/laravel.svg">
+  <title>Laravel-V01</title>
 </head>
 <body>
   <main>
