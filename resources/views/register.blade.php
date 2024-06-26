@@ -24,13 +24,13 @@
       <section id="login-body">
         <div class="input-field">
           <label for="">Username</label>
-          <input type="text" name="username" class="input">
+          <input type="text" name="username" placeholder="Enter your username" class="input">
         </div>
         <div class="input-field">
           <label for="">Password</label>
-          <input type="password" name="password" class="input">
+          <input type="password" name="password" placeholder="Enter your password" class="input">
         </div>
-        <input type="submit" value="LOGIN" id="login-button">
+        <input type="submit" value="login" id="login-button">
         <p>Don't have an account? <a href="" id="link">Sign-up</a> </p>
       </section>
     </form>    
