@@ -8,10 +8,11 @@ class UserController extends Controller
 {
     public function register(Request $request)
     {
-        $validate = $request->validate([
-            'username' => 'required',
-            'password' => 'required',
+        $incomingFields = $request->validate([
+            'username' => ['required', 'string', 'max:255'],
+            'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
+            'password' => ['required', 'string', 'min:8'],
+            're-password' => ['required', 'string', 'min:8']
         ]);
-        return "You have registered Yourself";
     }
 }

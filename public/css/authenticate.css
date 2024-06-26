@@ -1,70 +1,79 @@
 #black-circle {
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 15vw;
-  right: 15vw;
-  height: 70vh; 
-  background-color: var(--secondary-black);
-  border-bottom-left-radius: 500px;
-  border-bottom-right-radius: 500px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 15vw;
+    right: 15vw;
+    height: 70vh;
+    background-color: var(--secondary-black);
+    border-bottom-left-radius: 500px;
+    border-bottom-right-radius: 500px;
 }
 
 main {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 550px;
-  padding: 20px;
-  background-color: var(--primary-black);
-  border-radius: 30px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 550px;
+    padding: 20px;
+    background-color: var(--primary-black);
+    border-radius: 30px;
 }
 
 h1 {
-  padding: 50px 0px 70px;
-  text-align: center;
-  font-weight: 900;
-  font-size: 4.375rem;
+    padding: 50px 0px 70px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 4.375rem;
 }
 
 form {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 1em 2em;
-  gap: 2em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 2em;
+    gap: 2em;
 }
 
 .login-body {
-  width: 100%;
+    width: 100%;
 }
 
 .input-field {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
 }
 
+.validate-container {
+    height: 16px;
+    padding-left: 0.5em;
+    margin-bottom: 1rem;
+}
+
+.validate {
+    color: #c72546;
+}
 
 .input-field > label {
-  font-weight: 300;
-  font-size: 14px;
-  cursor: pointer;
-  color: var(--primary-white);
+    font-weight: 300;
+    font-size: 14px;
+    cursor: pointer;
+    color: var(--primary-white);
 }
 
 .input {
-  font-size: 20px;
-  background-color: transparent;
-  border: none;
-  caret-color: var(--primary-white);
-  color: var(--primary-white);
-  border-bottom: 1px solid var(--primary-white);
-  padding: 8px;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    caret-color: var(--primary-white);
+    color: var(--primary-white);
+    border-bottom: 1px solid var(--primary-white);
+    padding: 8px;
 }
 
 input:focus {
@@ -72,32 +81,32 @@ input:focus {
 }
 
 .auth-button {
-  font-family: 'Oxanium';
-  width: 100%;
-  padding-block: 10px;
-  font-size: 1.5rem;
-  border-radius: 10px;
-  font-weight: 900;
-  border: none;
-  background-color: var(--primary-white);
-  color: var(--primary-black);
-  border: 1px solid transparent;
-  cursor: pointer;
+    font-family: "Oxanium";
+    width: 100%;
+    padding-block: 10px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    font-weight: 900;
+    border: none;
+    background-color: var(--primary-white);
+    color: var(--primary-black);
+    border: 1px solid transparent;
+    cursor: pointer;
 }
 
 .in-out-button {
-  background-color: transparent;
-  border: none;
-  text-decoration: underline;
+    background-color: transparent;
+    border: none;
+    text-decoration: underline;
 }
 
 .auth-button:hover {
-  background-color: transparent;
-  border: 1px solid var(--primary-white);
-  color: var(--primary-white);
+    background-color: transparent;
+    border: 1px solid var(--primary-white);
+    color: var(--primary-white);
 }
 
 .in-out-button:hover {
-  cursor: pointer;
-  color: blue;
+    cursor: pointer;
+    color: blue;
 }
