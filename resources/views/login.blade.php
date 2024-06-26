@@ -12,34 +12,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap" rel="stylesheet">
 
     <link rel="icon" type="image/x-icon" href="/images/laravel.svg">
-    <title>Register</title>
+    <title>Laravel-V01</title>
 </head>
 
 <body>
     <div id="black-circle"></div>
-    <h1>Register</h1>
+    <h1>Welcome!</h1>
+
     <main>
-        <form class="main" action="/register" method="POST">
+        <form class="main" action="/login" method="POST">
             @csrf
             <section class="login-body">
                 <div class="input-field">
                     <label for="name">Username</label>
                     <input id="name" type="text" name="name" value="{{ old('name') }}"
-                        placeholder="Create your username" class="input">
+                        placeholder="Username or Email" class="input">
                 </div>
                 <div class="validate-container">
                     @error('name')
-                        <span class="validate">*{{ $message }}*</span>
-                    @enderror
-                </div>
-
-                <div class="input-field">
-                    <label for="email">Email</label>
-                    <input id="email" type="email" name="email" value="{{ old('email') }}"
-                        placeholder="Enter a valid email" class="input">
-                </div>
-                <div class="validate-container">
-                    @error('email')
                         <span class="validate">*{{ $message }}*</span>
                     @enderror
                 </div>
@@ -56,27 +46,18 @@
                         <span class="validate">*{{ $message }}*</span>
                     @enderror
                 </div>
-
-                <div class="input-field re-pwd">
-                    <label for="re-pwd">Repeat Password</label>
-                    <input id="re-pwd" type="password" name="password_confirmation"
-                        placeholder="Repeat your password" class="input">
-                    <img id="re-pwdEye" src="/images/hide.png" alt="">
-                </div>
             </section>
-            <button class="auth-button">Register</button>
+            <button class="auth-button">Log In</button>
         </form>
-        <form action="/login" method="GET">
+        <form action="/" method="GET">
             @csrf
-            <p>Already have an account? <button class="in-out-button">Log In!</button> </p>
+            <p>Don't have an account? <button class="in-out-button">Sign Up!</button> </p>
         </form>
     </main>
 
-    <script>
+        <script>
         const passwordField = document.getElementById("pwd");
         const pwdEye = document.getElementById("pwdEye");
-        const repeatPassField = document.getElementById("re-pwd");
-        const repeatBtn = document.getElementById("re-pwdEye");
 
         pwdEye.addEventListener("click", function() {
             const currentType = passwordField.getAttribute("type");
@@ -89,18 +70,8 @@
                 pwdEye.setAttribute("src", "/images/hide.png");
             }
         });
-        repeatBtn.addEventListener("click", function() {
-            const currentType = repeatPassField.getAttribute("type");
-
-            if (currentType === "password") {
-                repeatPassField.setAttribute("type", "text");
-                repeatBtn.setAttribute("src", "/images/show.png");
-            } else {
-                repeatPassField.setAttribute("type", "password");
-                repeatBtn.setAttribute("src", "/images/hide.png");
-            }
-        });
     </script>
+
 </body>
 
 </html>

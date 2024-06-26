@@ -47,6 +47,7 @@ form {
     display: flex;
     flex-direction: column;
     margin-bottom: 0.5rem;
+    position: relative;
 }
 
 .validate-container {
@@ -59,11 +60,20 @@ form {
     color: #c72546;
 }
 
-.input-field > label {
+.input-field label {
     font-weight: 300;
     font-size: 14px;
     cursor: pointer;
     color: var(--primary-white);
+}
+
+.input-field img {
+    max-width: 32px;
+    max-height: 32px;
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    cursor: pointer;
 }
 
 .input {
@@ -78,6 +88,10 @@ form {
 
 input:focus {
     outline: none;
+}
+
+.re-pwd {
+    margin-bottom: 1rem;
 }
 
 .auth-button {
