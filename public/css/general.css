@@ -1,18 +1,37 @@
 :root {
-  --main-color: #FAF1E1;
-  --login-body: #1A1C1E; 
-  --main-black: #0B0A08;
-  --input-black: #373740;
+  --primary-white: #FAF1E1; /* main background color */
+  --primary-black: #1A1C1E; /* Seen in authentication form*/ 
+  --secondary-black: #0B0A08; /* the big black circle */
+  --primary-grey: #9B9B9B; /* 10% font */
+  --secondary-grey: #383838; /* mainly border */
 }
 
 *, *::before, *::after {
   box-sizing: border-box;
+}
+
+* {
   margin: 0;
   padding: 0;
+  font: inherit;
+  color: inherit;
+  transition: all 0.3s;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 html {
   font-family: 'Oxanium', 'Montserrat', 'Arial', 'sans-serif';
-  background-color: var(--main-color);
-  color: var(--main-color);
+}
+
+body {
+  background-color: var(--primary-white);
+  color: var(--primary-white);
+  position: relative;
+  min-height: 100vh;
+  margin-bottom: 1000px;
 }
