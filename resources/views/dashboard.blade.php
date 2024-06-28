@@ -13,14 +13,14 @@
 
 <body>
     @auth
-        <h1>Welcome {{ Auth::user()->name }} </h1>
+        <h1 class="text-primary-black ">Welcome {{ Auth::user()->name }} </h1>
     @else
         <h1>Unrestricted Enter</h1>
     @endauth
 
     <form action="/logout" method="POST">
       @csrf
-      <button>Log Out</button>
+      <button class="text-primary-black border-primary-black border p-2">Log Out</button>
     </form>
 </body>
 

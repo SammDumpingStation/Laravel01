@@ -37,16 +37,6 @@ class UserController extends Controller
         }
     }
 
-    public function signin()
-    {
-        return redirect('/login');
-    }
-
-    public function signup()
-    {
-        return redirect('/');
-    }
-
     public function logout()
     {
         auth()->logout();

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="icon" type="image/x-icon" href="/images/laravel.svg">
-    @vite('resources/css/app.css')
+    @vite(['resources/css/app.css', 'resources/js/app.js']) 
     <title>Laravel-V01</title>
 </head>
 
@@ -23,10 +23,11 @@
                 <div class="flex flex-col mb-2 relative">
                     <label for="name" class="font-thin text-sm cursor-pointer">Username</label>
                     <input id="name"
-                        class="text-xl bg-transparent caret-inherit border-b border-primary-white text-primary-white focus:outline-none p-2 placeholder-primary-grey "
+                        class="bg-transparent text-xl caret-inherit border-b border-primary-white text-primary-white focus:outline-none p-2 placeholder-primary-grey "
                         type="text" name="name" value="{{ old('name') }}" placeholder="Username or Email"
                         class="input" />
                 </div>
+
                 <div class="h-5 pl-2 mb-4">
                     @error('name')
                         <span class="text-primary-red italic">*{{ $message }}*</span>
@@ -61,22 +62,7 @@
         </form>
     </main>
 
-    <script>
-        const passwordField = document.getElementById("pwd");
-        const pwdEye = document.getElementById("pwdEye");
-
-        pwdEye.addEventListener("click", function() {
-            const currentType = passwordField.getAttribute("type");
-
-            if (currentType === "password") {
-                passwordField.setAttribute("type", "text");
-                pwdEye.setAttribute("src", "/images/show.png");
-            } else {
-                passwordField.setAttribute("type", "password");
-                pwdEye.setAttribute("src", "/images/hide.png");
-            }
-        });
-    </script>
+    <script src></script>
 
 </body>
 

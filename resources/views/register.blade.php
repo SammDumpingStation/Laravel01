@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="icon" type="image/x-icon" href="/images/laravel.svg" />
-    @vite('resources/css/app.css')
+    @vite(['resources/css/app.css', 'resources/js/app.js']) 
     <title>Register</title>
 </head>
 
@@ -81,36 +81,6 @@
             </p>
         </form>
     </main>
-
-    <script>
-        const passwordField = document.getElementById("pwd");
-        const pwdEye = document.getElementById("pwdEye");
-        const repeatPassField = document.getElementById("re-pwd");
-        const repeatBtn = document.getElementById("re-pwdEye");
-
-        pwdEye.addEventListener("click", function() {
-            const currentType = passwordField.getAttribute("type");
-
-            if (currentType === "password") {
-                passwordField.setAttribute("type", "text");
-                pwdEye.setAttribute("src", "/images/show.png");
-            } else {
-                passwordField.setAttribute("type", "password");
-                pwdEye.setAttribute("src", "/images/hide.png");
-            }
-        });
-        repeatBtn.addEventListener("click", function() {
-            const currentType = repeatPassField.getAttribute("type");
-
-            if (currentType === "password") {
-                repeatPassField.setAttribute("type", "text");
-                repeatBtn.setAttribute("src", "/images/show.png");
-            } else {
-                repeatPassField.setAttribute("type", "password");
-                repeatBtn.setAttribute("src", "/images/hide.png");
-            }
-        });
-    </script>
 </body>
 
 </html>
