@@ -11,10 +11,14 @@
 </head>
 
 <body>
-    <h1 class="pt-[50px] pb-[50px] text-center font-black text-stroke-2 text-7xl ">REGISTER</h1>
+    <div
+        class="absolute h-[450px] w-[800px] top-0 rounded-b-full -z-10 left-1/2 -translate-x-1/2 bg-[#989898] bg-[linear-gradient(to_bottom,rgba(255,255,255,0.15)_0%,rgba(0,0,0,0.15)_100%),radial-gradient(at_top_center,rgba(255,255,255,0.40)_0%,rgba(0,0,0,0.40)_120%)] [background-blend-mode:multiply,multiply]">
+    </div>
+    <h1 class="pt-[50px] pb-[50px] text-center font-black text-7xl ">REGISTER</h1>
     <main
         class="mx-auto my-0 flex flex-col justify-center items-center w-[550px] p-5 bg-primary-black/60  rounded-[30px] backdrop-blur-3xl">
-        <form class="w-full flex flex-col items-center justify-center py-4 px-8 gap-8" action="/register" method="POST">
+        <form class="w-full flex flex-col items-center justify-center py-4 px-8 gap-8" action="/register"
+            method="POST">
             @csrf
             <section class="w-full">
                 <div class="flex flex-col mb-2 relative">
@@ -46,7 +50,7 @@
                 <div class="flex flex-col mb-2 relative">
                     <label for="pwd">Password</label>
                     <input id="pwd" type="password"
-                        class="text-xl bg-transparent caret-inherit border-b border-primary-white text-primary-white p-2 placeholder-primary-grey  focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
+                        class="text-xl bg-transparent caret-inherit border-b border-primary-white text-primary-white p-2 placeholder-primary-grey"
                         name="password" placeholder="Create your password" class="input" />
                     <img id="pwdEye" class="h-8 w-8 absolute bottom-2 right-0 cursor-pointer" src="/images/hide.png"
                         alt="" />
@@ -73,7 +77,7 @@
             @csrf
             <p>
                 Already have an account?
-                <button class="in-out-button">Log In!</button>
+                <button class="underline cursor-pointer">Log In!</button>
             </p>
         </form>
     </main>
